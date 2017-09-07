@@ -6,6 +6,9 @@
 * Синтаксис и семантика на С++
 * Основни елементи в езика С++
 * Типове данни
+* Как да създадем проект в среда за програмиране
+    * Visual Studio
+    * Code::Blocks
 
 ## Въведение в курса
 ### Водещи: Георги Минков & Кристин Стефанова
@@ -376,3 +379,31 @@ sqrt(x) – корен квадратен, pow(x, n) – х на степен n
 + по-голямо или равно: >=
 + равно: ==
 + различно: !=
+
+## Създаване на проект
+### Visual Studio 2015
+1. Create a project by pointing to **New** on the **File** menu, and then clicking **Project**.
+2. In the **Visual C++** project types pane, click **Win32**, and then click **Win32 Console Application**.
+3. Type a name for the project.
+    By default, the solution that contains the project has the same name as the project, but you can type a different name. 
+    You can also type a different location for the project.
+    Click **OK** to create the project.
+4. In the **Win32 Application Wizard**, click **Next**, select **Empty Project**,and then click **Finish**.
+5. If **Solution Explorer** is not displayed, on the **View** menu, click **Solution Explorer**.
+6. Add a new source file to the project, as follows.
+    a. In **Solution Explorer**, right-click the **Source Files** folder, point to **Add**, and then click **New Item**.
+    b. In the **Code** node, click **C++ File (.cpp)**, type a name for the file, and then click **Add**.
+    The .cpp file appears in the **Source Files** folder in **Solution Explorer**, and the file is opened in the Visual Studio editor.
+7. In the file in the editor, type a valid C++ program that uses the Standard C++ Library, or copy one of the sample programs and paste it in the file.
+8. **Save** the file.
+9. On the **Build** menu, click **Build Solution**.
+    The Output window displays information about the compilation progress, for example, the location of the build log and a message that    indicates the build status.
+### Code::Blocks
+1. Launch the **Project Wizard** through **File->New->Project** to start a **new project**. Here there are many pre-configured templates for various types of projects, including the option to create custom templates. 
+2. Select **Console application**, as this is the most common for general purposes, an click **Go**.
+3. The console application wizard will appear next. Continue through the menus, selecting **C++** when prompted for a language. 
+4. In the next screen, give the project a name and type or select a destination folder. As seen below, Code::Blocks will generate the remaining entries from these two.
+5. Finally, the wizard will ask if this project should use the default compiler (normally GCC) and the two default builds: **Debug** and **Release**. All of these settings are fine. Press **finish** and the project will be generated. 
+6. The main window will turn gray, but that is not a problem, the source file needs only to be opened. In the **Projects** tab of the **Management** pane on the left expand the folders and double click on the source file **main.cpp** to open it in the editor.
+7. Write your program.
+8. Now, hitting F9 should compile and run the program.
