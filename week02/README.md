@@ -128,6 +128,7 @@ int main()
 }
 ```
 Блок-схема:
+
 ![alt tag](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week02/diagrams/Diagram_if.png)
 
 ### Пълна форма на if
@@ -169,6 +170,7 @@ int main()
 }
 ```
 Блок-схема:
+
 ![alt tag](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week02/diagrams/Diagram_if_else.png)
 
 #### Вложена форма
@@ -286,16 +288,35 @@ switch(<израз|стойност>)
  * default е **опционален**, т.е не е от задължителния синтаксис на оператора switch. Той се използва когато никой от изброените условия не се е изпълнило и искаме да отбележим това;
 
 Блок-схема:
+
 ![alt tag](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week02/diagrams/Diagram_switch.png)
 
+```c++
+#include <iostream>
+ 
+int main () {
+   // local variable declaration:
+   char grade = 'D';
 
-
-
-
-
-
-
-
-
-
-
+   switch(grade) {
+      case 'A' :
+         std::cout << "Excellent!" << std::endl; 
+         break;
+      case 'B' :
+      case 'C' :
+         std::cout << "Well done" << std::endl;
+         break;
+      case 'D' :
+         std::cout << "You passed" << std::endl;
+         break;
+      case 'F' :
+         std::cout << "Better try again" << std::endl;
+         break;
+      default :
+         std::cout << "Invalid grade" << std::endl;
+   }
+   std::cout << "Your grade is: " << grade << std::endl;
+ 
+   return 0;
+}
+```
