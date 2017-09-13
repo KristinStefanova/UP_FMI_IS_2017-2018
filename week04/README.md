@@ -178,28 +178,28 @@ int main()
 Започваме да сравняваме последователно числата от редицата с нашето число-7. Както забелязваме, числото 7 се намира в средата на редицата. Е, намерихме го! Нужно ли е след като сме намерили 7 да продължаваме да търсим? - Не. Как се прекратява търсенето. В програмирането използваме оператора break. Вече го видяхме при оператора **switch**. Тук обаче, **break** се използва, когато искаме **принудително** да приключим цикъл. 
 
 ```c++
-	#include <iostream>
-	using namespace std;
-	
-	int main()
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+	int temp_number;
+	int size_of_sequence;
+
+	cin >> size_of_sequence;
+	for (int i = 0; i < size_of_sequence; i++)
 	{
-	
-		int temp_number;
-		int size_of_sequence;
-	
-		cin >> size_of_sequence;
-		for (int i = 0; i < size_of_sequence; i++)
+		cin >> temp_number;
+		if (temp_number == 7)
 		{
-			cin >> temp_number;
-			if (temp_number == 7)
-			{
-				cout << "You're lucky! " << endl;
-				break;
-			}
+			cout << "You're lucky! " << endl;
+			break;
 		}
-	
-		return 0;
 	}
+
+	return 0;
+}
 ```
 	
 
@@ -207,33 +207,33 @@ int main()
 Освен **break**, можем да използваме помощни флагове(flags). Такава променлива(**flag**) служи да маркира промяната на някакво условие, като сменя стойността си от 0 на 1 и обратното. Да, добре е флаговете да са от тип **bool**.  
 
 ```c++
-	#include <iostream>
-	using namespace std;
-	
-	int main()
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+	int temp_number;
+	int size_of_sequence;
+	bool flag = false; // свалили сме флага
+
+	cin >> size_of_sequence;
+
+	for (int i = 0; i < size_of_sequence && !flag; i++)
 	{
-	
-		int temp_number;
-		int size_of_sequence;
-		bool flag = false; // свалили сме флага
-
-		cin >> size_of_sequence;
-		
-		for (int i = 0; i < size_of_sequence && !flag; i++)
+		cin >> temp_number;
+		if (temp_number == 7)
 		{
-			cin >> temp_number;
-			if (temp_number == 7)
-			{
-				cout << "You're lucky! " << endl;
-				flag = true; // вдигаме флага, така ще прекратим цикъла
-			}
+			cout << "You're lucky! " << endl;
+			flag = true; // вдигаме флага, така ще прекратим цикъла
 		}
-		
-		if (flag == false) // уведомяваме потребителя, че не сме намерили 7
-			cout << "Sorry! :( " << endl;
-
-		return 0;
 	}
+
+	if (flag == false) // уведомяваме потребителя, че не сме намерили 7
+		cout << "Sorry! :( " << endl;
+
+	return 0;
+}
 ```
         
 ### Вложени цикли
@@ -241,23 +241,23 @@ int main()
 
 Пример: Отпечатване на числата от 1 до 9 в решетка
 ```c++
-	#include <iostream>
-	using namespace std;
-	
-	
-	int main()
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	int k = 1;
+	for (int i = 0; i < 3; i++) // външен
 	{
-		int k = 1;
-		for (int i = 0; i < 3; i++) // външен
+		for (int j = 0; j < 3; j++) // вътрешен
 		{
-			for (int j = 0; j < 3; j++) // вътрешен
-			{
-				cout << k ;
-				k++;
-			}
-			cout << endl;
+			cout << k ;
+			k++;
 		}
-		
-		return 0;
+		cout << endl;
 	}
+
+	return 0;
+}
 ```
