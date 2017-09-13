@@ -20,23 +20,23 @@
         
         int main()
         {
-        int x;
+        	int x;
         
-        cout << "X= ";
-        cin >> x;
-        
-        cout << x + 1 << endl;
-        cout << x + 2 << endl
-        cout << x + 3 << endl
-        cout << x + 4 << endl
-        cout << x + 5 << endl
-        cout << x + 6 << endl
-        cout << x + 7 << endl
-        cout << x + 8 << endl
-        cout << x + 9 << endl
-        cout << x + 10 << endl
+        	cout << "X= ";
+		cin >> x;
+
+		cout << x + 1 << endl;
+		cout << x + 2 << endl
+		cout << x + 3 << endl
+		cout << x + 4 << endl
+		cout << x + 5 << endl
+		cout << x + 6 << endl
+		cout << x + 7 << endl
+		cout << x + 8 << endl
+		cout << x + 9 << endl
+		cout << x + 10 << endl
        
-       return 0;
+       		return 0;
        }
 ```
 
