@@ -184,21 +184,21 @@ int main()
 	int main()
 	{
 	
-	int temp_number;
-	int size_of_sequence;
+		int temp_number;
+		int size_of_sequence;
 	
-	cin >> size_of_sequence;
-	for (int i = 0; i < size_of_sequence; i++)
-	{
-		cin >> temp_number;
-		if (temp_number == 7)
+		cin >> size_of_sequence;
+		for (int i = 0; i < size_of_sequence; i++)
 		{
-			cout << "You're lucky! " << endl;
-			break;
+			cin >> temp_number;
+			if (temp_number == 7)
+			{
+				cout << "You're lucky! " << endl;
+				break;
+			}
 		}
-	}
 	
-	return 0;
+		return 0;
 	}
 ```
 	
@@ -213,24 +213,26 @@ int main()
 	int main()
 	{
 	
-	int temp_number;
-	int size_of_sequence;
-	bool flag = false; // свалили сме флага
-	
-	cin >> size_of_sequence;
-	for (int i = 0; i < size_of_sequence && !flag; i++)
-	{
-		cin >> temp_number;
-		if (temp_number == 7)
-		{
-			cout << "You're lucky! " << endl;
-			flag = true; // вдигаме флага, така ще прекратим цикъла
-		}
-	}
-	if (flag == false) // уведомяваме потребителя, че не сме намерили 7
-		cout << "Sorry! :( " << endl;
+		int temp_number;
+		int size_of_sequence;
+		bool flag = false; // свалили сме флага
+
+		cin >> size_of_sequence;
 		
-	return 0;
+		for (int i = 0; i < size_of_sequence && !flag; i++)
+		{
+			cin >> temp_number;
+			if (temp_number == 7)
+			{
+				cout << "You're lucky! " << endl;
+				flag = true; // вдигаме флага, така ще прекратим цикъла
+			}
+		}
+		
+		if (flag == false) // уведомяваме потребителя, че не сме намерили 7
+			cout << "Sorry! :( " << endl;
+
+		return 0;
 	}
 ```
         
