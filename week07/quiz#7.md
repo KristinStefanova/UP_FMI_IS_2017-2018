@@ -25,7 +25,7 @@ int main()
 ```
 
 **2.**
-
+```c++
 #include <iostream>
 
 int return7()
@@ -129,7 +129,7 @@ int main()
 ```
 
 **7.**
-
+```c++
 #include <iostream>
 
 int return 5()
@@ -146,6 +146,7 @@ int main()
 ```
 
 **8.**
+```c++
 #include <iostream>
 
 int return5()
