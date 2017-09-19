@@ -153,12 +153,13 @@ int items[3][5] = { {0, 1, 3, 4},
 		  };
 ```
 **Koй от следните фрагменти ще принтира елементите на items?**
+
 A.
 ```c++
 for (int row = 0; row < 5; row++)
 {
-  cout << endl;
-  for (int col = 0; col < 3; col++)
+	cout << endl;
+  	for (int col = 0; col < 3; col++)
   		cout << items[row][col] << " ";
 }
 ```
@@ -167,7 +168,7 @@ B.
 ```c++
 for (int row = 0; row < 3; row++)
 {
-  for (int col = 0; col < 5; col++)
+  	for (int col = 0; col < 5; col++)
   		cout << items[row][col] << " ";
 }
 ```
