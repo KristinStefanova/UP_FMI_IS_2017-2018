@@ -198,7 +198,8 @@ int hours[100];
             0 - ако двата низа са равни
             1 - ако str1 е по - голям от str2
            -1 - ако str1 е по - малък от str2
-    strncmp(<name_of_str1>, <name_of_str2>,n) // сравнява лексикографски n на брой символи от str1 и str2 връща стойност:
+    strncmp(<name_of_str1>, <name_of_str2>,n) // сравнява лексикографски n на брой символи от str1 и str2 
+    връща стойност:
             0 - ако двата подниза са равни
             1 - ако str1 е по - голям от str2
            -1 - ако str1 е по - малък от str2
@@ -225,14 +226,14 @@ int main()
     
 ```
 
-	bool:	1 bytes
-	char:	1 bytes
-	short:	2 bytes
-	int:	4 bytes
-	long:	8 bytes
-	float:	4 bytes
-	double:	8 bytes
-	long double:	16 bytes
+	bool:		1 bytes
+	char:		1 bytes
+	short:		2 bytes
+	int:		4 bytes
+	long:		8 bytes
+	float:		4 bytes
+	double:		8 bytes
+	long double: 	16 bytes
 
 Когато използваме sizeof() върху масив, отново получаваме размера в байтове. Например, ако масива ни е от тип char и е с големина 100 елемента, то неговият размер е 100 елемента * 1 байт = 100 байта.
 ```c++
