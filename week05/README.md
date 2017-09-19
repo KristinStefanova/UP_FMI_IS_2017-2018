@@ -243,10 +243,10 @@ using namespace std;
 int main()
 {
     int arr[100];
-	char str[100];
+    char str[100];
 	
     cout << sizeof(arr) << " bytes" << endl;
-	cout << sizeof(str) << " bytes" << endl;
+    cout << sizeof(str) << " bytes" << endl;
     
-	return 0;
+    return 0;
 }
