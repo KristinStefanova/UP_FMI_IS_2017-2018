@@ -18,7 +18,8 @@ int return9()
  
 int main()
 {
-    std::cout << return7() + return9() << std::endl;
+    return7();
+    return9();
  
     return 0;
 }
@@ -62,8 +63,7 @@ int return9()
  
 int main()
 {
-    return7();
-    return9();
+    std::cout << return7() + return9() << std::endl;
  
     return 0;
 }
