@@ -12,7 +12,7 @@
 ще използваме двумерен масив, който прилича на таблица или матрица(като по алгебра :D). 
 Многомерните масиви, също като едномерните, са съставени от един и същ тип данни(int, char, double, и др.).
 
-![alt text](https://github.com/GeorgiMinkov/FMI_IS_UP_1_2016/blob/master/week8/matrixRep.jpeg )
+![alt text](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week06/diagrams/matrixRep.jpeg)
 
 Това е двумерен масив, който на С++, може да се декларира така: 
 ```c++
@@ -55,7 +55,7 @@
 ```
 Нагледно е това:
 
-![alt text](https://github.com/GeorgiMinkov/FMI_IS_UP_1_2016/blob/master/week8/matrixRepInit.jpeg) 
+![alt text](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week06/diagrams/matrixRepInit.jpeg) 
 
 #### Трети начин:
 Можем да  инициализираме двумерен масив и със стойности, въведени от клавиатурата.
@@ -76,7 +76,7 @@
                 // елементите -1 в съответния ред или колона
 ```
 
-![alt text](https://github.com/GeorgiMinkov/FMI_IS_UP_1_2016/blob/master/week8/matrixRepAccess.jpeg) 
+![alt text](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week06/diagrams/matrixRepAccess.jpeg) 
 
 ### Допустими операции
 Операции над цели двумерни масиви ***не са допустими***.
