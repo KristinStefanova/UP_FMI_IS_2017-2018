@@ -113,11 +113,11 @@ int main()
     char arrc[] = {'1', '2', '3'};
     char *ptrc = arrc;
  
-    cout << sizeof(arri)) << endl;
-    cout << sizeof(ptri)) << endl;
+    cout << sizeof(arri) << endl;
+    cout << sizeof(ptri) << endl;
  
-    cout << sizeof(arrc)) << endl;
-    cout << sizeof(ptrc));
+    cout << sizeof(arrc) << endl;
+    cout << sizeof(ptrc);
  
     return 0;
 }
