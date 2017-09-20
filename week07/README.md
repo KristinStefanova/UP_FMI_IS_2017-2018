@@ -220,3 +220,37 @@ void lego()
 В горните примери видяхме, че при извикване на функция с параметри трябва да ги подадем, като реда на подаване има значение, т.е:
 
 ![alt tag](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week07/diagrams/pic1.jpg)
+
+### Подаване на масив като параметър на функция
+#### Синтаксис за едномерен масив
+
+	return_type/void <function_name>( <type> <name>[], <integer_type> <size>);
+
+Пример:
+```c++
+int sumAllElementsInArray(int arr[], int size);
+```
+Извикването става, само с името на масива:
+```c++
+// somewhere in main()
+
+	int my_arr[5] = {1, 2, 3, 4, 5};
+	...
+	sumAllElementsInArray(my_arr, 5);
+```
+#### Синтаксис за двумерен масив
+
+	return_type/void <function_name>( <type> <name>[][<size_of_columns>], <integer_type> <size_of_rows>);
+
+Пример:
+```c++
+int sumAllElementsInMatrix(int mrx[][10], int rowSize);
+```
+Извикването става, само с името на масива:
+```c++
+// somewhere in main()
+
+	int my_mrx[3][3] = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
+	...
+	sumAllElementsInArray(my_mrx, 3);
+```
