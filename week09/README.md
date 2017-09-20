@@ -513,5 +513,7 @@ int main()
 
 ## Позлезно да прочетете:
 [Подаване по стойност](http://www.learncpp.com/cpp-tutorial/72-passing-arguments-by-value/)
+
 [Подаване по референция](http://www.learncpp.com/cpp-tutorial/73-passing-arguments-by-reference/)
+
 [Подаване по адрес](http://www.learncpp.com/cpp-tutorial/74-passing-arguments-by-address/)
