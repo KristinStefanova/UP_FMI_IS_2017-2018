@@ -118,14 +118,11 @@ D.
 **10. Кое от следните *НЕ* е вярно за референции в C++:**
 A. Референциите не могат да бъдат NULL
 B. При деклариране трябва да се инициализира
-C. 
-Once a reference is created, it cannot be later made to reference another object; it cannot be reset.
-D
-References cannot refer to constant value
+C. Веднъж създадена, не може да бъде реферирана към друг обект(променлива)
+D. Няма референция към константна стойност
 
-11.
-
-Output of following C++ program?
+**11. Какъв ще е резултата от следната програма?**
+```c++
 #include<iostream>
 using namespace std;
  
@@ -139,22 +136,23 @@ int main()
   cout << "ref = " << ref << endl;
   return 0;
 }
-Run on IDE
-A
-x = 20
-ref = 30
-B
-x = 20
-ref = 20
-C
-x = 10
-ref = 30
-D
-x = 30
-ref = 30
+```
+A.
+    x = 20
+    ref = 30
+B.
+    x = 20
+    ref = 20
+C.
+    x = 10
+    ref = 30
+D.
+    x = 30
+    ref = 30
 
-12.
-void fun(int *p) 
+**12. Какъв ще е резултата от следната програма?**
+```c++
+void foo(int *p) 
 { 
   int q = 10; 
   p = &q; 
@@ -164,9 +162,10 @@ int main()
 { 
   int r = 20; 
   int *p = &r; 
-  fun(p); 
-  printf("%d", *p); 
+  foo(p); 
+  
+  cout << *p; 
   return 0; 
+  
 }
-
-
+```
