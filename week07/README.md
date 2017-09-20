@@ -236,7 +236,7 @@ int sumAllElementsInArray(int arr[], int size);
 
 	int my_arr[5] = {1, 2, 3, 4, 5};
 	...
-	sumAllElementsInArray(my_arr, 5);
+	cout << sumAllElementsInArray(my_arr, 5);
 ```
 #### Синтаксис за двумерен масив
 
@@ -252,5 +252,5 @@ int sumAllElementsInMatrix(int mrx[][10], int rowSize);
 
 	int my_mrx[3][3] = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
 	...
-	sumAllElementsInArray(my_mrx, 3);
+	cout << sumAllElementsInArray(my_mrx, 3);
 ```
