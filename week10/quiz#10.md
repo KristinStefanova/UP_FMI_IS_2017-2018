@@ -1,93 +1,124 @@
 # Quiz #10
 
+**1. Какво съдържат(съхраняват) указателите?**
 
-1. What do pointers hold?
-    a) values
-    b) functions
-    c) addresses
+А. Стойности
 
-2. How do you declare a pointer that will hold an integer type?
-    a) int *p
-    b) int &p
-    c) int p
+В. Функции
 
-3. What symbol in C must be used to recieve the address of a variable?
-    a) &
-    b) %
-    c) *
+С. Адреси
 
-4. What is the correct way to assign the pointer p to the address of x?
-    a) *p=&x
-    b) p=%x
-    c) p=&x
-
-5. When using pointers in a function what must be sent to the function?
-    a) variable
-    b) value
-    c) address of variable
-
-6. True or false, a pointer int *p is declared, it is able to hold addresses of double type values as well.
-    a) true
-    b) false
+D. Променливи
 
 
+**2. Как ще декларирате указател, който ще сочи към цяло число?**    
+
+A. int #p;
+
+B. int &p;
+
+C. int p;
+
+D. int \*p;
 
 
+**3. Кой символ в C++ трябва да се използва за получаване на адрес на променлива?**
 
-7. 
+A. &
+
+B. #
+
+C. %
+
+D. \*
+
+
+**4. Какъв е правилният начин за присвояване адреса на x на указателя р(инициализиране на р)?**
+
+А. \*p = &x
+
+B. p = %x
+
+C. #p = &x
+
+D. p=&x
+
+
+**5. Когато използвате указатели в дадена функция(подаване по адрес), какво трябва да бъде подадено на функцията при извикването й?**
+
+А. Променлива
+
+B. Стойност
+
+C. Адрес на променлива
+
+D. Псевдоним на променлива
+
+
+**6. Вярно или не, указателят int \*p е деклариран, той е в състояние да съхранява адресите на стойности от тип double, също?**
+
+A. Вярно
+
+В. Не е вярно
+
+
+**7. Какъв ще е резултата от следната програма?**
+```c++
 #include <iostream>
 using namespace std; 
+
 int main()
 {
-      int var;  /*Suppose address of var is 2000 */
-
-     int *ptr = &var;
-     *ptr = 5;
-    cout << var << *ptr;
+    int var;  /* Приемете, че адреса на var е 2000 */
+    int *ptr = &var;
+    *ptr = 5;
+    cout << var << " " << *ptr;
              
  return 0;
 }
+```
 
-8.
-void f(int* p, int m)
+**8. Какъв ще е резултата от следната програма?**
+```c++
+#include <iostream>
+using namespace std; 
+
+void fоо(int* p, int m)
 {
     m = m + 5;
     *p = *p + m;
     return;
 }
-void main()
+
+int main()
 {
     int i=5, j=10;
-    f(&i, j);
-    printf("%d", i+j);
+    foo(&i, j);
+    cout << i+j;
+    
+    return 0;
 }
+```
 
-9.
-What is the return value of f(p, p) if the value of p is initialized to 5 before the call? Note that the first parameter is passed by reference, whereas the second parameter is passed by value.
-int f(int &x, int c) {
+**8. Каквo връща foo(p, p), ако стойността на p е инициализирана с 5 преди извикването? Обърнете внимание, че първият параметър се предава по референция, докато вторият параметър се предава по стойност.**
+```c++
+int foo(int &x, int c) {
    c  = c - 1;
    if (c == 0) return 1;
    x = x + 1;
-   return f(x, c) * x;
+   return c * x;
 } 
+```
 
+A. 
+B. 
+C. 
+D. 
 
-A
-3024
-B
-6561
-C
-55440
-D
-161051
-
-10.
-Which of the following is FALSE about references in C++
-A
-References cannot be NULL
-B
-A reference must be initialized when declared
-C
+**10. Кое от следните *НЕ* е вярно за референции в C++:**
+A. Референциите не могат да бъдат NULL
+B. При деклариране трябва да се инициализира
+C. 
 Once a reference is created, it cannot be later made to reference another object; it cannot be reset.
 D
 References cannot refer to constant value
