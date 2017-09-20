@@ -94,7 +94,7 @@ int main()
 {
     int i=5, j=10;
     foo(&i, j);
-    cout << i+j;
+    cout << i + j;
     
     return 0;
 }
@@ -142,25 +142,29 @@ int main()
   ref = 20;
   cout << "x = " << x << endl ;
   x = 30;
-  cout << "ref = " << ref << endl;
+  cout << "ref = " << ref;
   return 0;
 }
 ```
 
 A.
     x = 20
+   
     ref = 30
 
 B.
     x = 20
+    
     ref = 20
 
 C.
     x = 10
+    
     ref = 30
 
 D.
     x = 30
+    
     ref = 30
 
 **12. Какъв ще е резултата от следната програма?**
