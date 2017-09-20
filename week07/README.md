@@ -240,11 +240,11 @@ int sumAllElementsInArray(int arr[], int size);
 ```
 #### Синтаксис за двумерен масив
 
-	return_type/void <function_name>( <type> <name>[][<size_of_columns>], <integer_type> <size_of_rows>);
+	return_type/void <function_name>( <type> <name>[][<maximum_size_of_columns>], <integer_type> <size_of_rows>, <integer_type> <size_of_rows>);
 
 Пример:
 ```c++
-int sumAllElementsInMatrix(int mrx[][10], int rowSize);
+int sumAllElementsInMatrix(int mrx[][10], int rowSize, int columnSize);
 ```
 Извикването става, само с името на масива:
 ```c++
@@ -252,5 +252,5 @@ int sumAllElementsInMatrix(int mrx[][10], int rowSize);
 
 	int my_mrx[3][3] = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
 	...
-	cout << sumAllElementsInMatrix(my_mrx, 3);
+	cout << sumAllElementsInMatrix(my_mrx, 3, 3);
 ```
