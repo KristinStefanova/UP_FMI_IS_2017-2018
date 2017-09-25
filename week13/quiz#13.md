@@ -8,45 +8,45 @@ if (n<=1) return 1;
 else return(fib_r(n-1) + fib_r(n-2));
 }
 
-a. Linear recursion
-Tail recursion
-Binary recursion
-Nested recursion
+A. Linear recursion
+B. Tail recursion
+C. Binary recursion
+D. Nested recursion
 
 2. fib(5) is
 
-2
-3
-5
-8
+A. 2
+B. 3
+C. 5
+D. 8
 
 3. factorial(4) is
 
-0
-24
-12
-36
+A. 0
+B. 24
+C. 12
+D. 36
 
 
 4. True or False: If a recursive function does not have a base case, the compiler will detect this and display a compiler error.
 
-True
-False
+A. True
+B. False
 
 5. True or False: Recursive calls are usually contained within a loop.
 
-True
-False
+A. True
+B. False
 
 6. True or False: It is possible to have more than one recursive call within a function.
 
-True
-False
+A. True
+B. False
 
 7. True or False: Binary search can only be written recursively.
 
-True
-False
+A. True
+B. False
 
 8. Which of these statements is true about the following code?
 
@@ -56,10 +56,10 @@ if (n>0) return n + mystery(n-1);
 return 0;
 }
 
-The base case for this recursive method is an argument with any value which is less than or equal to zero.
-The base case for this recursive method is an argument with any value which is greater than zero.
-The base case for this recursive function is an argument with the value zero.
-There is no base case.
+A. The base case for this recursive method is an argument with any value which is less than or equal to zero.
+B. The base case for this recursive method is an argument with any value which is greater than zero.
+C. The base case for this recursive function is an argument with the value zero.
+D. There is no base case.
 
 
 9. Which of the following iterative functions is not equivalent to this recursive function?
@@ -70,7 +70,7 @@ if(n > 0) return (n + mystery(n - 1));
 return 0;
 }
 
- 
+A. 
 int mystery(int n) 
 {
 int sum = 0;
@@ -81,6 +81,7 @@ n--;
 return sum;
 }
  
+B.
 int mystery(int n)
 {
 int j = 0, sum = 0;
@@ -91,6 +92,7 @@ sum = sum + j;
 return sum;
 }
  
+C. 
 int mystery(int n)
 {
 int sum;
@@ -104,36 +106,36 @@ return sum;
 
 10. True or False: When a recursive solution's elegance outweighs its overhead (memory, time, efficiency, etc), and when it is much less complex than an iterative solution, you would most likely choose to use the recursive solution.
 
-True
-False
+A. True
+B. False
 
 11. True or False: You should always use a recursive solution rather than an iterative solution when you are sure that that recursive solution will not overflow the call stack.
 
-True
-False
+A. True
+B. False
 
 
-12. Recursion can be an inefficient way to implement a solution because
+12. Recursion can be an inefficient way to implement a solution because:
 
-using the call stack to store states adds significant overhead.
-calling a function multiple times could be reduced to looping, which might better done with a looping structure such as a while construct.
-Both of the above.
+A. using the call stack to store states adds significant overhead.
+B. calling a function multiple times could be reduced to looping, which might better done with a looping structure such as a while construct.
+C. Both of the above.
 
 13. True or False: Recursion happens when an algorithm does not use a loop.
 
-True
-False
+A. True
+B. False
 
 14. True or False: A function can be considered recursive if it has a direct or an indirect call to itself.
 
-True
-False
+A. True
+B. False
 
 
 15. True or False: Infinite recursion can occur when a recursive algorithm does not contain a base case.
 
-True
-False
+A. True
+B. False
 
 16. What does the following function do?
 int fun(int x, int y)
@@ -143,8 +145,8 @@ int fun(int x, int y)
 }
 
 A. x + y
-B. x + x*y
-C. x*y
+B. x + x\*y
+C. x\*y
 D. xy
 
 17. What does fun2() do in general?
@@ -160,8 +162,8 @@ int fun2(int a, int b)
     return fun(a, fun2(a, b-1));
 }
 
-A. x*y
-B. x+x*y
+A. x\*y
+B. x+x\*y
 C. xy
 D. yx
 
@@ -172,7 +174,7 @@ void print(int n)
     if (n > 4000)
         return;
     printf("%d ", n);
-    print(2*n);
+    print(2\*n);
     printf("%d ", n);
 }
  
