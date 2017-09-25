@@ -177,7 +177,7 @@ int main()
 }
 ```
 
-A. ThisQuiz
+A. This Quiz
 
 B. This
 
