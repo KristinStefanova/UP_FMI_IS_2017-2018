@@ -195,14 +195,16 @@ bool IsEvenNumber(int n)
 ```c++
 int Ackermann(int x, int y)
 {
-	// Основен случай
-	if (0 == x)
-		return y + 1;
+	// Основни случаи
+	if(x<0 || y<0)
+		return -1;
+	if(x==0)
+		return y+1;
 	// Условие за обработка на грешки
-	if (x <> 0 && 0 == y)
-		return Ackermann(x-1, 1);
+	if(y==0)
+		return Аckermann(x-1,1);
 	// Рекурсивно извикване чрез вложен метод
 	else
-		return Ackermann(x-1, Ackermann(x, y-1));
+		return Аckermann(x-1, Аckermann(x,y-1));
 }
 ```
