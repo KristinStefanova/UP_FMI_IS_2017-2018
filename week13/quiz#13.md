@@ -1,197 +1,262 @@
 # Quiz #13
 
-1. This function is an example of what type of recursion?
 
+**1. Тази функция е пример за какъв тип рекурсия?**
+```c++
 int fib_r(int n)
 {
-if (n<=1) return 1;
-else return(fib_r(n-1) + fib_r(n-2));
+    if (n<=1) 
+        return 1;
+    else 
+        return(fib_r(n-1) + fib_r(n-2));
 }
+```
+A. Линейна рекурсия
 
-A. Linear recursion
-B. Tail recursion
-C. Binary recursion
-D. Nested recursion
+B. Опашата рекурсия
 
-2. fib(5) is
+C. Двоична рекурсия
+
+D. Вложена рекурсия
+
+
+**2. fibоnacii(5) e**
 
 A. 2
+
 B. 3
+
 C. 5
+
 D. 8
 
-3. factorial(4) is
+
+**3. factorial(4) e**
 
 A. 0
+
 B. 24
+
 C. 12
+
 D. 36
 
 
-4. True or False: If a recursive function does not have a base case, the compiler will detect this and display a compiler error.
+**4. Вярно или невярно: Ако рекурсивната функция няма основен случай, компилаторът ще открие това и ще покаже грешка на компилатора.**
 
-A. True
-B. False
+A. Вярно
 
-5. True or False: Recursive calls are usually contained within a loop.
+B. Невярно
 
-A. True
-B. False
 
-6. True or False: It is possible to have more than one recursive call within a function.
+**5. Вярно или невярно: Рекурсивните извикваня обикновено се съдържат в цикъл.**
 
-A. True
-B. False
+A. Вярно
 
-7. True or False: Binary search can only be written recursively.
+B. Невярно
 
-A. True
-B. False
 
-8. Which of these statements is true about the following code?
+**6. Вярно или невярно: Възможно е да има повече от едно рекурсивно повикване в дадена функция.**
 
-int mystery(int n)
+A. Вярно
+
+B. Невярно
+
+
+**7. Вярно или невярно: Двоичното търсене може да бъде написано само рекурсивно.**
+
+A. Вярно
+
+B. Невярно
+
+
+**8. Кое от тези твърдения е вярно за следния код?**
+```c++
+int foo(int n)
 {
-if (n>0) return n + mystery(n-1);
-return 0;
+    if (n > 0) 
+        return n + foo(n-1);
+    return 0;
 }
+```
+A. Основният случай е всяка стойност на аргумента да е по-малка или равна на нула.
 
-A. The base case for this recursive method is an argument with any value which is less than or equal to zero.
-B. The base case for this recursive method is an argument with any value which is greater than zero.
-C. The base case for this recursive function is an argument with the value zero.
-D. There is no base case.
+Б. Основният случай е всяка стойност на аргумента да е по-голяма от нула.
+
+C. Основният случай е всяка стойност на аргумента да е равна на нула.
+
+D. Няма основен случай
 
 
-9. Which of the following iterative functions is not equivalent to this recursive function?
-
-int mystery(int n)
+**9. Коя от следните итеративни функции не е еквивалентна на тази рекурсивна функция?**
+```c++
+int foo(int n)
 {
-if(n > 0) return (n + mystery(n - 1));
-return 0;
+    if(n > 0) 
+         return (n + foo(n - 1));
+    return 0;
 }
+```
 
 A. 
-int mystery(int n) 
+```c++
+int foo(int n) 
 {
-int sum = 0;
-while (n > 0) {
-sum = sum + n;
-n--;
+    int sum = 0;
+    while (n > 0) 
+    {
+        sum = sum + n;
+        n--;
+    }
+    return sum;
 }
-return sum;
-}
- 
+``` 
+
 B.
-int mystery(int n)
+```c++
+int foo(int n) 
 {
-int j = 0, sum = 0;
-while (j < n) {
-j++;
-sum = sum + j;
+    int j = 0, sum = 0;
+    while (j < n) 
+    {
+        j++;
+        sum = sum + j;
+    }
+    return sum;
 }
-return sum;
-}
+```
  
 C. 
-int mystery(int n)
+```c++
+int foo(int n) 
 {
-int sum;
-while (n > 0) {
-sum = 0;
-sum = sum + n;
-n--;
+    int sum;
+    while (n > 0) 
+    {
+        sum = 0;
+        sum = sum + n;
+        n--;
+    }
+    return sum;
 }
-return sum;
-}
+```
 
-10. True or False: When a recursive solution's elegance outweighs its overhead (memory, time, efficiency, etc), and when it is much less complex than an iterative solution, you would most likely choose to use the recursive solution.
+**10. Вярно или невярно: Когато елегантността на рекурсивното решение надвишава нейните разходи (памет, време, ефективност и т.н.) и когато е много по-лесно от едно итеративно решение, най-вероятно ще решите да използвате рекурсивното решение.**
 
-A. True
-B. False
+A. Вярно
 
-11. True or False: You should always use a recursive solution rather than an iterative solution when you are sure that that recursive solution will not overflow the call stack.
-
-A. True
-B. False
+B. Невярно
 
 
-12. Recursion can be an inefficient way to implement a solution because:
+**11. Вярно или невярно: Винаги трябва да използвате по-скоро рекурсивно, отколкото итеративно решение, когато сте сигурни, че това рекурсивно решение няма да препълни стека.**
 
-A. using the call stack to store states adds significant overhead.
-B. calling a function multiple times could be reduced to looping, which might better done with a looping structure such as a while construct.
-C. Both of the above.
+A. Вярно
 
-13. True or False: Recursion happens when an algorithm does not use a loop.
-
-A. True
-B. False
-
-14. True or False: A function can be considered recursive if it has a direct or an indirect call to itself.
-
-A. True
-B. False
+B. Невярно
 
 
-15. True or False: Infinite recursion can occur when a recursive algorithm does not contain a base case.
+**12. Рекурсията може да бъде неефективен начин за реализиране на решение, защото:**
 
-A. True
-B. False
+A. използвайки стека за съхраняване на състоянията си използва значително много ресурси.
 
-16. What does the following function do?
-int fun(int x, int y)
+B. извикването на функция няколко пъти би могло да се сведе до цикличност, което би могло да бъде направено по-ефективно с цикъл
+
+C. и двете
+
+
+**13. Вярно или невярно: Рекурсията се случва, когато алгоритъмът не използва цикличност(повторение).**
+
+A. Вярно
+
+B. Невярно
+
+
+**14. Вярно или невярно: Функция може да се счита за рекурсивна, ако тя има пряко или непряко обръщение към себе си.**
+
+A. Вярно
+
+B. Невярно
+
+
+**15. Вярно или невярно: Безкрайната рекурсия може да настъпи, когато рекурсивния алгоритъм не съдържа базов(основен) случай.**
+
+A. Вярно
+
+B. Невярно
+
+
+**16. Какво прави следната функция?**
+```c++
+int foo(int x, int y)
 {
-    if (y == 0)   return 0;
-    return (x + fun(x, y-1));
+    if (y == 0)   
+        return 0;
+    return (x + foo(x, y-1));
 }
-
+```
 A. x + y
-B. x + x\*y
-C. x\*y
-D. xy
 
-17. What does fun2() do in general?
-int fun(int x, int y)
+B. x + x\*y
+
+C. x\*y
+
+D. Нищо
+
+**17. Какво прави foo2() като цяло?**
+```c++
+int foo(int x, int y)
 {
-    if (y == 0)   return 0;
-    return (x + fun(x, y-1));
+    if (y == 0)   
+        return 0;
+    return (x + foo(x, y-1));
 }
  
-int fun2(int a, int b)
+int foo2(int a, int b)
 {
-    if (b == 0) return 1;
-    return fun(a, fun2(a, b-1));
+    if (b == 0) 
+        return 1;
+    return foo(a, foo2(a, b-1));
 }
-
+```
 A. x\*y
-B. x+x\*y
-C. xy
-D. yx
 
-18. Output of following program?
-#include<stdio.h>
+B. x+x\*y
+
+C. x^y
+
+D. Нищо
+
+**18. Какъв ще е резултата от следната програма?**
+```c++
+#include<iostream>
+
 void print(int n)
 {
     if (n > 4000)
         return;
-    printf("%d ", n);
-    print(2\*n);
-    printf("%d ", n);
+    cout << n << " ";
+    print(2 * n);
+    cout << n << " ";
 }
  
 int main()
 {
     print(1000);
-    getchar();
     return 0;
 }
-
+```
 A. 1000 2000 4000
+
 B. 1000 2000 4000 4000 2000 1000
+
 C. 1000 2000 4000 2000 1000
+
 D. 1000 2000 2000 1000
 
-19. What does the following function do?
-int fun(unsigned int n)
+
+**19. Какво прави следната финкция?**
+```c++
+int foo(unsigned int n)
 {
     if (n == 0 || n == 1)
         return n;
@@ -199,34 +264,42 @@ int fun(unsigned int n)
     if (n%3 != 0)
         return 0;
  
-    return fun(n/3);
+    return foo(n/3);
 }
+```
+A. Връща 1, когато n е кратно на 3, в противен случай връща 0
 
-A. It returns 1 when n is a multiple of 3, otherwise returns 0
-B. It returns 1 when n is a power of 3, otherwise returns 0
-C. It returns 0 when n is a multiple of 3, otherwise returns 1
-D. It returns 0 when n is a power of 3, otherwise returns 1
+B. Връща 1, когато n е степен на 3, в противен случай връща 0
 
-20. Predict the output of following program
-#include <stdio.h>
-int f(int n)
+C. Връща 0, когато n е кратно на 3, в противен случай връща 1
+
+D. Връща 0, когато n е степен на 3, в противен случай връща 1
+
+
+**20. Какъв ще е резултата от следната програма?**
+```c++
+#include <iostream>
+
+int foo(int n)
 {
     if(n <= 1)
         return 1;
-    if(n%2 == 0)
-        return f(n/2);
-    return f(n/2) + f(n/2+1);
+    if(n % 2 == 0)
+        return foo(n/2);
+    return foo(n/2) + foo(n/2+1);
 }
  
  
 int main()
 {
-    printf("%d", f(11));
+   std::cout << foo(11);
     return 0;
 }
-
+```
 A. Stack Overflow
-B. 3
-C. 4
-D. 5
 
+B. 3
+
+C. 4
+
+D. 5
