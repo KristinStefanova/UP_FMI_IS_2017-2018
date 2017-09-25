@@ -195,9 +195,7 @@ bool IsEvenNumber(int n)
 ```c++
 int Ackermann(int x, int y)
 {
-	// Основни случаи
-	if(x<0 || y<0)
-		return -1;
+	// Основен случай
 	if(x==0)
 		return y+1;
 	// Условие за обработка на грешки
