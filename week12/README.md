@@ -62,7 +62,7 @@ int fact(int n)
  
 За целта трябва да се пресметне стойността на функцията **fact(x)** за **x равно на 4**, след което получената стойност да се изведе. 
 
-![stack](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week13/diagrams/stekova-ramka.png)
+![stack](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week12/diagrams/stekova-ramka.png)
 
 Генерира се стекова рамка за това обръщение към функцията **fact(4)**. В нея започва изпълнението на тялото на функцията за подадения параметър, тоест **n = x = 4**. 
 
