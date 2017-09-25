@@ -1,188 +1,266 @@
 # Quiz #12
 
-1. To recurse is to
+**1. При кoe има самоизвикване?**
 
-A. Practice recursion
-B. Swear again
-C. Neither of the above
+A. Рекурсията
 
-2. To recur is to
+B. Функцията
 
-A. Practice recursion
-B. Swear again
-C. Neither of the above
+C. Нито едно от посочените
 
-3. Factorial is
 
-A. a good introductory example of recursion, but a function better implemented iteratively for efficiency reasons.
-B. a good introductory example of recursion, and a function best implemented recursively.
-C. a bad introductory example of recursion as it hard to implement recursively.
+**2. Къде има повторение, освен в циклите?**
 
-4. factorial(0) is
+A. Рекурсията
+
+B. Функцията
+
+C. Нито едно от посочените
+
+
+**3. Факториел е:**
+
+A. добър основен пример за рекурсия. Функция, която по-добре е имплементирана итеративно, заради ефективността
+
+B. добър основен пример за рекурсия. Функция, която по-добре е имплементирана рекурсивно
+
+C. лош пример за рекурсия, защото трудно се имплементира рекурсивно
+
+
+**4. factorial(0) е:**
 
 A. 0
+
 B. 1
-C. Infinity
-D. Undefined
-E. None of the above
 
-5. Recursion is
+C. Безкрайност
 
-A. a powerful construct theoretically, but rarely used in actual programs.
-B. a weak construct theoretically rarely used in actual programs.
-C. a powerful construct theoretically, often used in certain applications that benefit from recursive methods.
+D. Неопределеност
 
-6. Which of the following is not a requirement for a recursive function?
+E. Нито едно от посочените
 
-A. It has two base cases.
-B. It has a recursive case
-C. Its recursive case approaches a base case.
 
-7. The function
+**5. Рекурсията е:**
 
+A. мощна теоретична конструкция, рядко се използва в реални програми
+
+B. слаба теоретична конструкция, рядко се използва в реални програми.
+
+C. мощна теоретична конструкция, често се използва в определени програми, които се възползват от преимуществата на рекурсивните методи.
+
+
+**6. Кое от следните не е изискване за рекурсивна функция?**
+
+A. Да има 2 основни случая
+
+B. Да има общ случай
+
+C. Общият случай да се свежда до основен случай
+
+D. Да има основен случай(поне 1)
+
+
+**7. Финкцията**
+```c++
 int example(unsigned int a)
 {
-if (a==0) return 0;
-else return example(a+1);
+	if (a==0) 
+		return 0;
+	else 
+		return example(a+1);
 }
+```
+**e ненадежна рекурсивна функция, защото:**
 
-is a bad recursive function because:
+A. няма общ случай
 
-A. it has no recursive case.
-B. it has no base case.
-C. the recursive case does not approach the base case.
+B. няма основен случай
 
-8. Is the following function circular?
+C. общият случай не се свежда до основния
 
-int syracuse(int n)
+
+**8. Следващата функция циклична ли е?**
+```c++
+int foo(int n)
 {
-if (n==1) return 0;
-else if (n % 2 != 0) return syracuse(n/2);
-else return 1 + syracuse(3*n + 1);
+	if (n==1) 
+		return 0;
+	else if (n % 2 != 0) 
+		return foo(n/2);
+	else 
+		return 1 + foo(3*n + 1);
 }
+```
+A. Да
 
-A. Yes
-B. No
-C. We don't know.
+B. Не
+
+C. Може би
 
 
-9. True or false: Regardless of implementation, the closed-form solution to the Fibonacci problem is always more efficient than a recursive implementation.
+**9. Вярно или невярно: Независимо от изпълнението, итеративното решение на проблема на Фибоначи е винаги по-ефективно от рекурсивно решение.**
 
-A. True
-B. False
+A. Вярно
 
-10. True or false: A linearly recursive function always has the recursive call at the end of the function.
+B. Невярно
 
-A. True
-B. False
 
-11. True or false: Tail recursion is a form of linear recursion.
+**10. Вярно или невярно: Линейната рекурсивна функция винаги има едно рекурсивно повикване в края на функцията.**
 
-A. True
-B. False
+A. Вярно
 
-12. The following function is an example of what form of recursion?
+B. Невярно
 
-int mystery(int n, int k)
+
+**11. Вярно или невярно: Опашатата рекурсия е форма на линейна рекурсия.**
+
+A. Вярно
+
+B. Невярно
+
+
+**12. Следната функция е пример за какъв вид на рекурсия?**
+```c++
+int foo(int n, int k)
 {
-if (k == 0 || n == k) return(1);
-else return(mystery(n-1,k) + mystery(n-1,k-1));
+	if (k == 0 || n == k) 
+		return 1;
+	else 
+		return(foo(n-1,k) + foo(n-1,k-1));
 }
+```
+A. Линейна рекурсия
 
-A. Linear recursion
-B. Binary recursion
-C. Nested recursion
-D. Mutual recursion
+B. Двоична рекурсия
 
-13. The following function implements what recursive function?
+C. Вложена рекурсия
 
-int mystery(char \*s)
+D. Взаимна рекурсия
+
+
+**13. Следната рекурсивна функция, на коя вградена функция за низове е еквивалентна?**
+```c++
+int foo(char \*s)
 {
-if (\*s=='\0') return 0;
-else return(1 + mystery(s+1));
+	if (\*s=='\0') 
+		return 0;
+	else 
+		return(1 + foo(s+1));
 }
-
+```
 A. strlen()
+
 B. strcmp()
+
 C. strstr()
+
 D. strchr()
 
 
-14. True or False: All recursive functions can be implemented iteratively.
 
-A. True
-B. False
+**14. Вярно или невярно: Всички рекурсивни функции могат да бъдат имплементирани итеративно.**
 
-15. True or False: All iterative functions can be implemented recursively.
+A. Вярно
 
-A. True
-B. False
+B. Невярно
 
-16. Predict output of following program
-#include <stdio.h>
+
+**15. Вярно или невярно: Всички итеративни функции могат да бъдат изпълнени рекурсивно.**
+
+A. Вярно
+
+B. Невярно
+
+
+**16. Какъв е резултата от следната програма?**
+```c++
+#include <iostream>
  
-int fun(int n)
+int foo(int n)
 {
     if (n == 4)
-       return n;
-    else return 2\*fun(n+1);
+        return n;
+    else 
+		return 2\*foo(n+1);
 }
  
  
 int main()
 {
-   printf("%d ", fun(2));
+   std::cout << foo(2);
    return 0;
 }
-
+```
 A. 4
-B. 8
-C. 16
-D. Runtime Error
 
-17. Consider the following recursive function fun(x, y). What is the value of fun(4, 3)
-int fun(int x, int y) 
+B. 8
+
+C. 16
+
+D. Error
+
+
+**17. Имате следната рекурсивна функция foo(x, y). Каква е стойността на foo(4, 3)?**
+```c++
+int foo(int x, int y) 
 {
   if (x == 0)
-    return y;
-  return fun(x - 1,  x + y);
+  	  return y;
+  return 
+  	  foo(x - 1,  x + y);
 } 
-
+```
 A. 13
+
 B. 12
+
 C. 9
+
 D. 10
 
-18. What does the following function print for n = 25?
-void fun(int n)
+
+**18. Kaкво ще принтира следната функция за n = 25?**
+```c++
+void foo(int n)
 {
   if (n == 0)
     return;
  
-  printf("%d", n%2);
-  fun(n/2);
+  std::cout << n % 2;
+  foo(n/2);
 }  
-
+```
 A. 11001
+
 B. 10011
+
 C. 11111
+
 D. 00000
 
-19. True or False: Infinite recursion can occur when a recursive algorithm contains a base case.
 
-True
-False
+**19. Вярно или невярно: Безкрайна рекурсия може да се настъпи, когато рекурсивния алгоритъм съдържа основен случай.**
 
-20. Consider the following recursive C function that takes two arguments
+A. Вярно
 
+B. Невярно
+
+
+**20. Имате следната рекурсивна функция.**
+```c++
 unsigned int foo(unsigned int n, unsigned int r) {
-  if (n  > 0) return (n%r +  foo (n/r, r ));
-  else return 0;
+  	if (n  > 0) 
+		return (n % r +  foo (n / r, r ));
+  	else 
+		return 0;
 }
-
-What is the return value of the function foo when it is called as foo(345, 10) ?
+```
+**Какъв ще е резултата от извикването foo(345, 10)?**
 
 A. 345
+
 B. 12
+
 C. 5
+
 D. 3
