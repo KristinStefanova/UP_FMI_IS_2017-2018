@@ -2,41 +2,41 @@
 
 1. To recurse is to
 
-Practice recursion
-Swear again
-Neither of the above
+A. Practice recursion
+B. Swear again
+C. Neither of the above
 
 2. To recur is to
 
-Practice recursion
-Swear again
-Neither of the above
+A. Practice recursion
+B. Swear again
+C. Neither of the above
 
 3. Factorial is
 
-a good introductory example of recursion, but a function better implemented iteratively for efficiency reasons.
-a good introductory example of recursion, and a function best implemented recursively.
-a bad introductory example of recursion as it hard to implement recursively.
+A. a good introductory example of recursion, but a function better implemented iteratively for efficiency reasons.
+B. a good introductory example of recursion, and a function best implemented recursively.
+C. a bad introductory example of recursion as it hard to implement recursively.
 
 4. factorial(0) is
 
-0
-1
-Infinity
-Undefined
-None of the above
+A. 0
+B. 1
+C. Infinity
+D. Undefined
+E. None of the above
 
 5. Recursion is
 
-a powerful construct theoretically, but rarely used in actual programs.
-a weak construct theoretically rarely used in actual programs.
-a powerful construct theoretically, often used in certain applications that benefit from recursive methods.
+A. a powerful construct theoretically, but rarely used in actual programs.
+B. a weak construct theoretically rarely used in actual programs.
+C. a powerful construct theoretically, often used in certain applications that benefit from recursive methods.
 
 6. Which of the following is not a requirement for a recursive function?
 
-It has two base cases.
-It has a recursive case
-Its recursive case approaches a base case.
+A. It has two base cases.
+B. It has a recursive case
+C. Its recursive case approaches a base case.
 
 7. The function
 
@@ -46,11 +46,11 @@ if (a==0) return 0;
 else return example(a+1);
 }
 
-is a bad recursive function because
+is a bad recursive function because:
 
-it has no recursive case.
-it has no base case.
-the recursive case does not approach the base case.
+A. it has no recursive case.
+B. it has no base case.
+C. the recursive case does not approach the base case.
 
 8. Is the following function circular?
 
@@ -61,25 +61,25 @@ else if (n % 2 != 0) return syracuse(n/2);
 else return 1 + syracuse(3*n + 1);
 }
 
-Yes
-No
-We don't know.
+A. Yes
+B. No
+C. We don't know.
 
 
 9. True or false: Regardless of implementation, the closed-form solution to the Fibonacci problem is always more efficient than a recursive implementation.
 
-True
-False
+A. True
+B. False
 
 10. True or false: A linearly recursive function always has the recursive call at the end of the function.
 
-True
-False
+A. True
+B. False
 
 11. True or false: Tail recursion is a form of linear recursion.
 
-True
-False
+A. True
+B. False
 
 12. The following function is an example of what form of recursion?
 
@@ -89,34 +89,34 @@ if (k == 0 || n == k) return(1);
 else return(mystery(n-1,k) + mystery(n-1,k-1));
 }
 
-Linear recursion
-Binary recursion
-Nested recursion
-Mutual recursion
+A. Linear recursion
+B. Binary recursion
+C. Nested recursion
+D. Mutual recursion
 
 13. The following function implements what recursive function?
 
-int mystery(char *s)
+int mystery(char \*s)
 {
-if (*s=='\0') return 0;
+if (\*s=='\0') return 0;
 else return(1 + mystery(s+1));
 }
 
-strlen()
-strcmp()
-strstr()
-strchr()
+A. strlen()
+B. strcmp()
+C. strstr()
+D. strchr()
 
 
 14. True or False: All recursive functions can be implemented iteratively.
 
-True
-False
+A. True
+B. False
 
 15. True or False: All iterative functions can be implemented recursively.
 
-True
-False
+A. True
+B. False
 
 16. Predict output of following program
 #include <stdio.h>
@@ -125,7 +125,7 @@ int fun(int n)
 {
     if (n == 4)
        return n;
-    else return 2*fun(n+1);
+    else return 2\*fun(n+1);
 }
  
  
