@@ -199,7 +199,7 @@ int Ackermann(int x, int y)
 	if(x==0)
 		return y+1;
 	// Условие за обработка на грешки
-	if(y==0)
+	if(x > 0 && y==0)
 		return Аckermann(x-1,1);
 	// Рекурсивно извикване чрез вложен метод
 	else
