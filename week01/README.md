@@ -94,7 +94,7 @@ Git е контрол на версиите. Ако питате чичко Goog
 ##### Създаване на профил: [github.com](http://github.com) 
 ##### Основна работа с GitHub: [10MinutesGuide](https://guides.github.com/activities/hello-world/)
 ##### Основна работа с Git: [30MinutesGuide](http://rogerdudler.github.io/git-guide/)
-#### Други термини: ![Programming terms](https://www.computerhope.com/jargon/program.htm)
+#### Други термини: [Programming terms](https://www.computerhope.com/jargon/program.htm)
 ### Синтаксис и семантика на С++
 Да се определи **синтаксисът** на един език за програмиране означава да се зададе множество от правила, съгласно които една редица от символи е програма. Да се определи **семантиката** на език за програмиране означава да се определят правилата, съгласно които се изпълняват програмите на този език за програмиране.  
 ### Основни елементи на езика С++
