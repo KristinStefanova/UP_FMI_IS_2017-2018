@@ -104,16 +104,16 @@ Git е контрол на версиите. Ако питате чичко Goog
 #include <iostream.h>
 int main()
 {
-double a = 2.5;
-double b = 3.61;
-double sum;
-/*
-Let's find the sum оf a and b and see the result
-*/
-sum = a + b;
-cout << "Sum of a and b is " << sum;
+  double a = 2.5;
+  double b = 3.61;
+  double sum;
+  /*
+  Let's find the sum оf a and b and see the result
+  */
+  sum = a + b;
+  cout << "Sum of a and b is " << sum;
 
-return 0;
+  return 0;
 }
 ```
 #### Описание на програмата:
