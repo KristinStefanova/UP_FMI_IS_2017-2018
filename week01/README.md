@@ -16,7 +16,7 @@
 ### Водещи: Георги Минков & Кристин Стефанова
 ### Страница на курса: 
 ![github.com/KristinStefanova/UP_FMI_IS_2017-2018](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/)
-
+![learn.fmi.uni-sofia.bg](https://learn.fmi.uni-sofia.bg/course/view.php?id=3722)
 ### Цели: 
 Основната цел на този курс е да ви научим да мислите като програмисти. Да може да посрещате проблеми и да се научите да ги решавате по най-оптималния начин.
 ### Методи: 
