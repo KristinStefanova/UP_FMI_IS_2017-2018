@@ -339,6 +339,26 @@ int main()
 	//	cout << "The number is not a palindrome\n";
 	//}
 
+	// Sum and count
+	//int number = -1, countOfOdd = 0, sumOfEven = 0;
+
+	//do
+	//{
+	//	cout << "Enter number: ";
+	//	cin >> number;
+
+	//	if (number % 2 == 0)
+	//	{
+	//		sumOfEven += number;
+	//	}
+	//	else
+	//	{
+	//		countOfOdd++;
+	//	}
+
+	//} while (number != 0);
+
+	//cout << "Sum of evens is: " << sumOfEven << "\nCount of odds are: " << countOfOdd << endl;
 
 	// часовник с "празно" посредата
 	//int line = -1, number = -1, position = -1;
