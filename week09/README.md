@@ -235,7 +235,7 @@ void lego()
 Нека обърнем малко внимание на подаването на параметри във функции.
 В горните примери видяхме, че при извикване на функция с параметри трябва да ги подадем, като реда на подаване има значение, т.е:
 
-![alt tag](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week08/diagrams/pic1.jpg)
+![alt tag](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week09/diagrams/pic1.jpg)
 
 ### Подаване на масив като параметър на функция
 #### Синтаксис за едномерен масив
