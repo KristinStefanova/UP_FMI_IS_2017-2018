@@ -12,7 +12,7 @@
 ще използваме двумерен масив, който прилича на таблица или матрица(като по алгебра :D). 
 Многомерните масиви, също като едномерните, са съставени от един и същ тип данни(int, char, double, и др.).
 
-![alt text](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week06/diagrams/matrixRep.jpeg)
+![alt text](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week07/diagrams/matrixRep.jpeg)
 
 Това е двумерен масив, който на С++, може да се декларира така: 
 ```c++
@@ -55,7 +55,7 @@
 ```
 Нагледно е това:
 
-![alt text](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week06/diagrams/matrixRepInit.jpeg) 
+![alt text](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week07/diagrams/matrixRepInit.jpeg) 
 
 #### Втори начин':
 Не е задължително да попълвате всички стойностти, както и да използвате вътрешните скоби за указване елементите на редовете. Въпреки че, някои компилатори ще ви позволят да пропуснете вътрешните скоби, ние силно препоръчваме да ги включите, така или иначе, както за целите на четливостта на кода, така и за начина, по който C++ ще замени липсващите стойности с 0.
@@ -106,7 +106,7 @@ int array[][] =
                 // елементите -1 в съответния ред или колона
 ```
 
-![alt text](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week06/diagrams/matrixRepAccess.jpeg) 
+![alt text](https://github.com/KristinStefanova/UP_FMI_IS_2017-2018/blob/master/week07/diagrams/matrixRepAccess.jpeg) 
 
 ### Допустими операции
 Операции над цели двумерни масиви ***не са допустими***.
